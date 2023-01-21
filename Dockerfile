@@ -15,6 +15,7 @@ RUN set -x \
     # Install, update & upgrade packages
     && apt-get update \
     && apt-get install -y --no-install-recommends --no-install-suggests \
+    software-properties-common \
     wine \
     winbind \
     xvfb \
