@@ -1,5 +1,5 @@
 # https://github.com/CM2Walki/steamcmd/blob/master/bullseye/Dockerfile
-FROM cm2network/steamcmd:latest
+FROM cm2network/steamcmd:root
 
 LABEL maintainer="juuso.takala86@gmail.com"
 
