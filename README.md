@@ -1,3 +1,4 @@
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/divn/wreckfestdocker/docker-image.yml?style=plastic)
 # What is Wreckfest?
 
 Wreckfest is a racing video game developed by Bugbear Entertainment and published by THQ Nordic.<br/>
