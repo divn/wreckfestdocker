@@ -14,9 +14,11 @@ ENV DLURL https://raw.githubusercontent.com/divn/wreckfestdocker
 RUN set -x \
     # Install, update & upgrade packages
     && apt-get update \
+    && dpkg --add-architecture i386 \
     && apt-get install -y --no-install-recommends --no-install-suggests \
     software-properties-common \
     wine \
+    wine32 \
     winbind \
     xvfb \
     xauth \
