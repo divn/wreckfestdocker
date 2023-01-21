@@ -25,4 +25,4 @@ else
     echo "Existing server_config found!"
 fi
 
-xvfb-run exec wine Wreckfest_x64.exe -s server_config=server_config.cfg
+xvfb-run exec wine Wreckfest.exe -s server_config=server_config.cfg
