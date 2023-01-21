@@ -25,4 +25,4 @@ else
     echo "Existing server_config found!"
 fi
 
-bash "xvfb-run exec wine Wreckfest_x64.exe -s server_config=server_config.cfg"
+bash xvfb-run exec wine "${STEAMCMDDIR}Wreckfest_x64.exe" -s server_config=server_config.cfg
