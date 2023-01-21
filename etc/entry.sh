@@ -10,6 +10,9 @@ else
 	bash "${STEAMCMDDIR}/steamcmd.sh" +force_install_dir "$STEAMAPPDIR" +login anonymous +app_update "$STEAMAPPID" "${steamcmd_update_args[@]}" +quit
 fi
 
+# Switch to workdir
+cd "${STEAMAPPDIR}"
+
 # We assume that if the config is missing, that this is a fresh container
 if [ ! -f server_config.cfg ]
 then
@@ -21,8 +24,5 @@ then
 else
     echo "Existing server_config found!"
 fi
-
-# Switch to workdir
-cd "${STEAMAPPDIR}"
 
 bash xvfb-run exec wine Wreckfest_x64.exe -s server_config=server_config.cfg
