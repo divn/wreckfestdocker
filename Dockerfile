@@ -18,6 +18,7 @@ RUN set -x \
     wine \
     winbind \
     xvfb \
+    xauth \
     wget \
     && mkdir -p "${STEAMAPPDIR}" \
     # Add entry script
