@@ -1,6 +1,9 @@
 # What is Wreckfest?
-MORDHAU is a multiplayer medieval slasher. Create your mercenary and fight in brutal battles where you will experience fast paced combat, castle sieges, cavalry charges, and more. <br/>
-This Docker image contains the dedicated server of the game. <br/>
+
+Wreckfest is a racing video game developed by Bugbear Entertainment and published by THQ Nordic.<br/>
+Wreckfest is described as the spiritual successor to the FlatOut series and a cross between FlatOut,<br/>
+Destruction Derby and cult 1989 PC racer Street Rod.[1] A notable feature of the game engine is the <br/>
+use of soft-body damage modelling, which enables location-based damage that affects the driving dynamics of vehicles in a realistic fashion.
 
 > [Wreckfest](https://store.steampowered.com/app/228380/Wreckfest/)
 
@@ -9,10 +12,13 @@ This Docker image contains the dedicated server of the game. <br/>
 # How to use this image
 
 ## Hosting a simple game server
-Running on the *host* interface (recommended):<br/>
+
+Running on the _host_ interface (recommended):<br/>
+
 ```console
-$ docker run -d --net=host -e SERVER_NAME="EXAMPLE_NAME" -e SERVER_PASSWORD="EXAMPLE_PASSWORD" --name=wreckfest-dedicated **********
+$ docker run -d --net=host -e SERVER_NAME="EXAMPLE_NAME" -e SERVER_PASSWORD="EXAMPLE_PASSWORD" --name=wreckfest-dedicated ghcr.io/divn/wreckfestdocker:master
 ```
+
 If u dont set SERVER_NAME and SERVER_PASSWORDS they will be defaults
 "defaultservername"
 "defaultserverpassword"

@@ -16,7 +16,7 @@ cd "${STEAMAPPDIR}"
 # We assume that if the config is missing, that this is a fresh container
 if [ ! -f server_config.cfg ]
 then
-    echo "Existing serve_config not found"
+    echo "Existing server_config not found"
     echo "Copying initial config to server_config.cfg"
     cp initial_server_config.cfg server_config.cfg
     sed -i 's/server_name=.*/server_name='"${SERVER_NAME}"'/g' server_config.cfg
